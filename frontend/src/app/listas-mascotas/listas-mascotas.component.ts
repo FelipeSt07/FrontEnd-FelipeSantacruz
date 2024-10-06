@@ -17,7 +17,7 @@ export class ListasMascotasComponent implements OnInit {
   }
 
   loadMascotas(): void {
-    this.mascotaService.getMascotas().subscribe((data: Mascota[]) => {
+    this.mascotaService.obtenerMascotas().subscribe((data: Mascota[]) => {
       this.mascotas = data;
     });
   }

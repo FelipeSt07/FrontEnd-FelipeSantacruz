@@ -17,7 +17,7 @@ export class ListasSolicitudesComponent implements OnInit {
   }
 
   loadSolicitudes(): void {
-    this.solicitudService.getSolicitudes().subscribe((data: Solicitud[]) => {
+    this.solicitudService.obtenerSolicitudes().subscribe((data: Solicitud[]) => {
       this.solicitudes = data;
     });
   }
