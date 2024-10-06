@@ -1,0 +1,23 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { provideHttpClient } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { MascotasComponent } from './componentes/mascotas/mascotas.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    MascotasComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [
+    provideClientHydration(),
+    provideHttpClient()
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
