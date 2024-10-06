@@ -1,0 +1,30 @@
+.agregar-mascota {
+  margin: 20px;
+}
+
+.agregar-mascota form {
+  display: flex;
+  flex-direction: column;
+}
+
+.agregar-mascota label {
+  margin: 10px 0 5px;
+}
+
+.agregar-mascota input {
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+.agregar-mascota button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.agregar-mascota button:hover {
+  background-color: #218838;
+}

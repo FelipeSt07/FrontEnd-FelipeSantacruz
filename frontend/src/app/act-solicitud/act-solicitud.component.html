@@ -1,0 +1,30 @@
+<div class="container">
+  <h2>Actualizar Solicitud</h2>
+
+  <div *ngIf="solicitudSeleccionada">
+    <h3>Solicitud Seleccionada</h3>
+    <form (ngSubmit)="actualizarSolicitud(solicitudSeleccionada)">
+      <div class="form-group">
+        <label for="estadoSolicitud">Estado de la Solicitud:</label>
+        <input
+          type="text"
+          [(ngModel)]="solicitudSeleccionada.estado_solicitud"
+          name="estadoSolicitud"
+          class="form-control"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Actualizar</button>
+    </form>
+  </div>
+
+  <h3>Lista de Solicitudes</h3>
+  <ul class="list-group">
+    <li
+      class="list-group-item"
+      *ngFor="let solicitud of solicitudes"
+      (click)="seleccionarSolicitud(solicitud)"
+    >
+      {{ solicitud.estado_solicitud }} - Adoptante: {{ solicitud.id_adoptante }} - Mascota: {{ solicitud.id_mascota }}
+    </li>
+  </ul>
+</div>

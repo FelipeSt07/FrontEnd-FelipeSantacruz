@@ -1,0 +1,30 @@
+.crear-solicitud {
+  margin: 20px;
+}
+
+.crear-solicitud form {
+  display: flex;
+  flex-direction: column;
+}
+
+.crear-solicitud label {
+  margin: 10px 0 5px;
+}
+
+.crear-solicitud select {
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+.crear-solicitud button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.crear-solicitud button:hover {
+  background-color: #0056b3;
+}

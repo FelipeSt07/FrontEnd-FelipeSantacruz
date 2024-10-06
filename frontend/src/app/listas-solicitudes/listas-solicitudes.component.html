@@ -1,0 +1,12 @@
+<div class="listas-solicitudes">
+  <h2>Lista de Solicitudes</h2>
+  <ul>
+    <li *ngFor="let solicitud of solicitudes">
+      <h3>Solicitud ID: {{ solicitud.id_solicitud }}</h3>
+      <p>ID Adoptante: {{ solicitud.id_adoptante }}</p>
+      <p>ID Mascota: {{ solicitud.id_mascota }}</p>
+      <p>Fecha de Solicitud: {{ solicitud.fecha_solicitud | date }}</p>
+      <p>Estado de Solicitud: {{ solicitud.estado_solicitud }}</p>
+    </li>
+  </ul>
+</div>

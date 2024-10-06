@@ -1,0 +1,18 @@
+<div class="crear-solicitud">
+  <h2>Crear Solicitud</h2>
+  <form (ngSubmit)="crearSolicitud()">
+    <div>
+      <label for="id_adoptante">Adoptante:</label>
+      <select id="id_adoptante" [(ngModel)]="nuevaSolicitud.id_adoptante" name="id_adoptante" required>
+        <option *ngFor="let adoptante of adoptantes" [value]="adoptante.id_adoptante">{{ adoptante.nombre }}</option>
+      </select>
+    </div>
+    <div>
+      <label for="id_mascota">Mascota:</label>
+      <select id="id_mascota" [(ngModel)]="nuevaSolicitud.id_mascota" name="id_mascota" required>
+        <option *ngFor="let mascota of mascotas" [value]="mascota.id_mascota">{{ mascota.nombre }}</option>
+      </select>
+    </div>
+    <button type="submit">Crear Solicitud</button>
+  </form>
+</div>

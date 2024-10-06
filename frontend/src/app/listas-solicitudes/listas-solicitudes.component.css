@@ -1,0 +1,21 @@
+.listas-solicitudes {
+  margin: 20px;
+}
+
+.listas-solicitudes h2 {
+  font-size: 2em;
+  color: #007bff;
+}
+
+.listas-solicitudes ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.listas-solicitudes li {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 15px;
+  background-color: #f9f9f9;
+}

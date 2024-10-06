@@ -1,0 +1,24 @@
+.container {
+  margin-top: 20px;
+}
+
+h2, h3 {
+  margin-bottom: 20px;
+}
+
+.list-group-item {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.list-group-item:hover {
+  background-color: #f0f0f0;
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+button {
+  margin-top: 10px;
+}
