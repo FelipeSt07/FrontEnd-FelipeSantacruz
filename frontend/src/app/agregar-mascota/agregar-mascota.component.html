@@ -1,22 +1,26 @@
-<div class="agregar-mascota">
-  <h2>Agregar Mascota</h2>
-  <form (ngSubmit)="agregarMascota()">
-    <div>
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" [(ngModel)]="nuevaMascota.nombre" name="nombre" required>
+<div class="agregar-mascota container mt-5">
+  <h2 class="text-warning text-center">Agregar Mascota</h2>
+  <form (ngSubmit)="agregarMascota()" class="mt-4">
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre:</label>
+      <input type="text" id="nombre" class="form-control" [(ngModel)]="nuevaMascota.nombre" name="nombre" required>
     </div>
-    <div>
-      <label for="especie">Especie:</label>
-      <input type="text" id="especie" [(ngModel)]="nuevaMascota.especie" name="especie" required>
+    <div class="mb-3">
+      <label for="especie" class="form-label">Especie:</label>
+      <input type="text" id="especie" class="form-control" [(ngModel)]="nuevaMascota.especie" name="especie" required>
     </div>
-    <div>
-      <label for="raza">Raza:</label>
-      <input type="text" id="raza" [(ngModel)]="nuevaMascota.raza" name="raza" required>
+    <div class="mb-3">
+      <label for="raza" class="form-label">Raza:</label>
+      <input type="text" id="raza" class="form-control" [(ngModel)]="nuevaMascota.raza" name="raza" required>
     </div>
-    <div>
-      <label for="edad">Edad:</label>
-      <input type="number" id="edad" [(ngModel)]="nuevaMascota.edad" name="edad" required>
+    <div class="mb-3">
+      <label for="edad" class="form-label">Edad:</label>
+      <input type="number" id="edad" class="form-control" [(ngModel)]="nuevaMascota.edad" name="edad" required>
     </div>
-    <button type="submit">Agregar Mascota</button>
+    <div class="mb-3">
+      <label for="imagen" class="form-label">URL de la Imagen:</label>
+      <input type="url" id="imagen" class="form-control" [(ngModel)]="nuevaMascota.imagen" name="imagen" required>
+    </div>
+    <button type="submit" class="btn btn-outline-warning btn-lg">Agregar Mascota</button>
   </form>
 </div>

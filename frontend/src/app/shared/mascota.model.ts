@@ -5,4 +5,5 @@ export interface Mascota {
   raza: string;
   edad: number | null;
   estado_adopcion: boolean | number;
+  imagen: string;
 }

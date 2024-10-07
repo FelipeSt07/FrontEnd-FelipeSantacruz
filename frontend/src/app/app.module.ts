@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, provideHttpClient } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { ActSolicitudComponent } from './act-solicitud/act-solicitud.component';
@@ -23,7 +25,9 @@ import { ListasSolicitudesComponent } from './listas-solicitudes/listas-solicitu
   ],
   imports: [
     BrowserModule,
-    FormsModule, // Para usar ngModel
+    RouterModule,     // Aquí importa el RouterModule
+    FormsModule,
+    AppRoutingModule, // Para usar ngModel
     HttpClientModule // Para hacer solicitudes HTTP
   ],
   providers: [],

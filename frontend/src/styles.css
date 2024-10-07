@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilos globales */
+body {
+  background-color: #343a40; /* Fondo oscuro */
+  color: #ffffff; /* Texto blanco */
+}
+
+/* Encabezados */
+.text-warning {
+  color: #ffd700; /* Color dorado */
+}
+
+/* Texto gris */
+.text-muted {
+  color: #6c757d; /* Color gris */
+}
+
+/* Botones */
+.btn-outline-warning {
+  border: 1px solid #ffd700; /* Borde dorado */
+  color: #ffd700; /* Texto dorado */
+}
+
+.btn-outline-warning:hover {
+  background-color: #ffd700; /* Fondo dorado al pasar el mouse */
+  color: black; /* Texto negro al pasar el mouse */
+}
+
+.btn-outline-light {
+  border: 1px solid #ffffff; /* Borde blanco */
+  color: #ffffff; /* Texto blanco */
+}
+
+.btn-outline-light:hover {
+  background-color: #ffffff; /* Fondo blanco al pasar el mouse */
+  color: black; /* Texto negro al pasar el mouse */
+}
+
+/* Espaciado y márgenes */
+.mt-5 {
+  margin-top: 3rem !important; /* Espaciado superior */
+}
+
+.mt-4 {
+  margin-top: 2rem !important; /* Espaciado superior */
+}
+
+.my-4 {
+  margin: 1.5rem 0; /* Márgenes verticales */
+}

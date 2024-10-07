@@ -1,12 +1,18 @@
-<div class="listas-mascotas">
-  <h2>Lista de Mascotas</h2>
-  <ul>
-    <li *ngFor="let mascota of mascotas">
-      <h3>{{ mascota.nombre }}</h3>
+<div class="container mt-5 listas-mascotas">
+  <div class="text-center mb-4">
+    <h2 class="text-warning">Lista de Mascotas</h2>
+    <p class="lead text-light">Aquí puedes ver todas las mascotas disponibles para adopción.</p>
+  </div>
+
+  <ul class="list-group">
+    <li class="list-group-item bg-secondary text-light mb-3" *ngFor="let mascota of mascotas">
+      <h3 class="text-warning">{{ mascota.nombre }}</h3>
       <p>Especie: {{ mascota.especie }}</p>
       <p>Raza: {{ mascota.raza }}</p>
       <p>Edad: {{ mascota.edad }} años</p>
-      <p>Estado de Adopción: {{ mascota.estado_adopcion ? 'Adoptado' : 'Disponible' }}</p>
+      <p>Estado de Adopción: <span [ngClass]="{'text-success': !mascota.estado_adopcion, 'text-danger': mascota.estado_adopcion}">
+        {{ mascota.estado_adopcion ? 'Adoptado' : 'Disponible' }}
+      </span></p>
     </li>
   </ul>
 </div>

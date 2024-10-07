@@ -1,5 +1,36 @@
-<div class="home">
-  <h1>{{ title }}</h1>
-  <p>{{ description }}</p>
-  <p>Utiliza el menú para navegar a las diferentes secciones de la aplicación.</p>
+<div class="container mt-5">
+  <div class="text-center">
+    <h1 class="display-4 text-warning">{{ title }}</h1>
+    <p class="lead text-light">{{ description }}</p>
+    <p class="text-light">Utiliza el menú para navegar a las diferentes secciones de la aplicación.</p>
+    <hr class="my-4 bg-warning">
+
+    <!-- Botones para navegar a diferentes secciones -->
+    <div class="d-flex justify-content-center">
+      <a routerLink="/agregar-mascota" class="btn btn-outline-light btn-lg mx-2">Agregar Mascotas</a>
+      <a routerLink="/crear-solicitud" class="btn btn-outline-warning btn-lg mx-2">Crear Solicitud</a>
+      <a routerLink="/listas-mascotas" class="btn btn-outline-light btn-lg mx-2">Listas de Mascotas</a>
+      <a routerLink="/listas-solicitudes" class="btn btn-outline-warning btn-lg mx-2">Listas de Solicitudes</a>
+    </div>
+
+    <div class="mt-5 bg-secondary text-light p-4 rounded">
+      <h3>¿Qué es la adopción de mascotas?</h3>
+      <p class="text-light">
+        La adopción de mascotas es una forma de darle un hogar a un animal que lo necesita. Al adoptar, no solo estás ayudando a un animal en necesidad, sino que también estás haciendo espacio en los refugios para otros animales.
+      </p>
+      <p class="text-light">
+        Explora nuestra aplicación y descubre cómo puedes ayudar a nuestros amigos peludos a encontrar un nuevo hogar.
+      </p>
+    </div>
+
+    <div class="mt-4">
+      <h3 class="text-warning">Beneficios de adoptar</h3>
+      <ul class="list-group">
+        <li class="list-group-item bg-secondary text-light">Proporcionas un hogar a un animal necesitado.</li>
+        <li class="list-group-item bg-secondary text-light">Disminuyes la sobrepoblación de refugios.</li>
+        <li class="list-group-item bg-secondary text-light">Fomentas la adopción responsable.</li>
+        <li class="list-group-item bg-secondary text-light">Obtienes un compañero leal y amoroso.</li>
+      </ul>
+    </div>
+  </div>
 </div>

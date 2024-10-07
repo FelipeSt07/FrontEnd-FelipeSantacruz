@@ -1,14 +1,59 @@
-.home {
-  text-align: center;
-  margin: 50px;
+/* Estilos globales */
+body {
+  background-color: #f8f9fa; /* Fondo blanco suave */
+  color: #343a40; /* Texto en gris oscuro */
 }
 
-.home h1 {
-  font-size: 2.5em;
-  color: #007bff;
+/* Encabezados */
+.text-warning {
+  color: #ffd700; /* Color dorado */
 }
 
-.home p {
-  font-size: 1.2em;
-  margin: 15px 0;
+/* Texto gris */
+.text-muted {
+  color: #6c757d; /* Color gris */
+}
+
+/* Botones */
+.btn-outline-warning {
+  border: 1px solid #ffd700; /* Borde dorado */
+  color: #ffd700; /* Texto dorado */
+}
+
+.btn-outline-warning:hover {
+  background-color: #ffd700; /* Fondo dorado al pasar el mouse */
+  color: black; /* Texto negro al pasar el mouse */
+}
+
+.btn-outline-light {
+  border: 1px solid #ffffff; /* Borde blanco */
+  color: #ffffff; /* Texto blanco */
+}
+
+.btn-outline-light:hover {
+  background-color: #ffffff; /* Fondo blanco al pasar el mouse */
+  color: black; /* Texto negro al pasar el mouse */
+}
+
+.btn-outline-success {
+  border: 1px solid #28a745; /* Borde verde */
+  color: #28a745; /* Texto verde */
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745; /* Fondo verde al pasar el mouse */
+  color: white; /* Texto blanco al pasar el mouse */
+}
+
+/* Espaciado y márgenes */
+.mt-5 {
+  margin-top: 3rem !important; /* Espaciado superior */
+}
+
+.mt-4 {
+  margin-top: 2rem !important; /* Espaciado superior */
+}
+
+.my-4 {
+  margin: 1.5rem 0; /* Márgenes verticales */
 }

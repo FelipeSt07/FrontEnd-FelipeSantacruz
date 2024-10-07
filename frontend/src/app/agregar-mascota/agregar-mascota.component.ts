@@ -13,7 +13,8 @@ export class AgregarMascotaComponent {
     especie: '',
     raza: '',
     edad: null,
-    estado_adopcion: 0
+    estado_adopcion: 0,
+    imagen: 'https://example.com/fido.jpg'
   };
 
   constructor(private mascotaService: MascotaService) {}
@@ -27,7 +28,8 @@ export class AgregarMascotaComponent {
         especie: '',
         raza: '',
         edad: null,
-        estado_adopcion: 0
+        estado_adopcion: 0,
+        imagen: 'https://example.com/fido.jpg'
       };
     }, error => {
       console.error('Error al agregar mascota:', error);
