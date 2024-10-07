@@ -4,15 +4,23 @@
     <p class="lead text-light">Aquí puedes ver todas las mascotas disponibles para adopción.</p>
   </div>
 
-  <ul class="list-group">
-    <li class="list-group-item bg-secondary text-light mb-3" *ngFor="let mascota of mascotas">
-      <h3 class="text-warning">{{ mascota.nombre }}</h3>
-      <p>Especie: {{ mascota.especie }}</p>
-      <p>Raza: {{ mascota.raza }}</p>
-      <p>Edad: {{ mascota.edad }} años</p>
-      <p>Estado de Adopción: <span [ngClass]="{'text-success': !mascota.estado_adopcion, 'text-danger': mascota.estado_adopcion}">
-        {{ mascota.estado_adopcion ? 'Adoptado' : 'Disponible' }}
-      </span></p>
-    </li>
-  </ul>
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let mascota of mascotas">
+      <div class="card bg-secondary text-light">
+        <img [src]="mascota.imagen" class="card-img-top" alt="Imagen de {{ mascota.nombre }}">
+        <div class="card-body">
+          <h3 class="card-title text-warning">{{ mascota.nombre }}</h3>
+          <p class="card-text">Especie: {{ mascota.especie }}</p>
+          <p class="card-text">Raza: {{ mascota.raza }}</p>
+          <p class="card-text">Edad: {{ mascota.edad }} años</p>
+          <p class="card-text">
+            Estado de Adopción:
+            <span [ngClass]="{'text-warning': !mascota.estado_adopcion, 'text-danger': mascota.estado_adopcion}">
+              {{ mascota.estado_adopcion ? 'Adoptado' : 'Disponible' }}
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

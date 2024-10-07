@@ -7,7 +7,7 @@ import { Solicitud } from './solicitud.model';
   providedIn: 'root'
 })
 export class SolicitudService {
-  private apiUrl = 'http://localhost:3000/solicitudes'; // URL del backend
+  private apiUrl = 'http://localhost:3000/api/solicitudes'; // URL del backend
 
   constructor(private http: HttpClient) {}
 

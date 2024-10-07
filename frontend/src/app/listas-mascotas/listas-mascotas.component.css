@@ -19,3 +19,17 @@
   padding: 15px;
   background-color: #f9f9f9;
 }
+
+.card {
+  height: 100%; /* Asegúrate de que la carta ocupe todo el espacio disponible */
+}
+.card-img-top {
+  width: 100%; /* Asegúrate de que la imagen ocupe todo el ancho */
+  height: 200px; /* Establece una altura fija para todas las imágenes */
+  object-fit: cover; /* Asegúrate de que la imagen se recorte si es necesario */
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye el espacio entre los elementos del cuerpo */
+}

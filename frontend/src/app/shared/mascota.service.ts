@@ -7,7 +7,7 @@ import { Mascota } from './mascota.model';
   providedIn: 'root'
 })
 export class MascotaService {
-  private apiUrl = 'http://localhost:3000/mascotas'; // URL del backend
+  private apiUrl = 'http://localhost:3000/api/mascotas'; // URL del backend
 
   constructor(private http: HttpClient) {}
 
